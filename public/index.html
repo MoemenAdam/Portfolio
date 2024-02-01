@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/logo.svg.png">
+  <title>Moemen Adam</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="dark:bg-primary relative">
+  <main>
+    <!-- NavBar -->
+    <nav class="shadow-lg p-4 fixed w-full z-50 bg-white dark:bg-primary dark:text-white">
+      <div id="nav" class="flex justify-between items-center mainPadding">
+        <div class="w-12 md:w-16">
+          <img class="w-full" src="imgs/logo.svg.png" alt="FrontEndLogo">
+        </div>
+        <ul class="hidden xl2:flex gap-10 text-xl p-4">
+          <div class="cursor-pointer mainHover theme">
+            <svg class="sun w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+            <svg class="moon w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+          </div>
+          <li class="mainHover hover:border-b-secondary hover:border-b-2"><a href="#portfolio">Portfolio</a></li>
+          <li class="mainHover hover:border-b-secondary hover:border-b-2"><a href="#about">About</a></li>
+          <li class="mainHover hover:border-b-secondary hover:border-b-2"><a href="#experience">Experience</a></li>
+          <li class="mainHover hover:border-b-secondary hover:border-b-2"><a target="_blank" href="https://drive.google.com/file/d/1Mhch41M1xIR4Pn19k67Gk-cxjOAUgq1o/view?usp=drive_link">Resume</a></li>
+          <li class="mainHover"><a class="btn" href="#contact">Contact me</a></li>
+        </ul>
+        <div class="cursor-pointer block xl2:hidden" id="burger">
+          <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div class="hidden xl2:hidden" id="menu">
+          <ul class="flex flex-col text-xl gap-10 pb-10">
+            <div class="cursor-pointer mainHover flex justify-center theme">
+              <svg class="sun w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+              </svg>
+              <svg class="moon w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+              </svg>
+            </div>
+            <li class="text-center "><a class="mainHover hover:border-b-secondary hover:border-b-2" href="#portfolio">Portfolio</a></li>
+            <li class="text-center "><a class="mainHover hover:border-b-secondary hover:border-b-2" href="#about">About</a></li>
+            <li class="text-center "><a class="mainHover hover:border-b-secondary hover:border-b-2" href="#experience">Experience</a></li>
+            <li class="text-center "><a class="mainHover hover:border-b-secondary hover:border-b-2" target="_blank" href="https://drive.google.com/file/d/1Mhch41M1xIR4Pn19k67Gk-cxjOAUgq1o/view?usp=drive_link">Resume</a></li>
+            <li class="text-center mainHover"><a class="btn " href="#contact">Contact me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Outher Site -->
+    <div id="outer">
+      <!-- Photo and Name Section -->
+      <section>
+        <!-- Photo and Name Section -->
+        <section class="mainPadding pt-24 flex xl2:flex-row flex-col-reverse justify-center items-center" id="portfolio">
+          <div class="xl2:w-1/2">
+            <h1 class="h1">Moemen Adam</h1>
+            <h1 class="h1"> FrontEnd Developer</h1>
+            <p class="text-2xl text-primary text-center xl2:text-left p-2 dark:text-white">
+              🚀 a dynamic front-end developer 
+              dedicated to crafting seamless and engaging user experiences.
+            </p>
+            <!-- Technology slider -->
+            <div class="hidden h-28 xl2:flex w-auto overflow-hidden relative mt-10 mr-10">
+              <div class="flex" style="width: fit-content; animation: scroll 10s linear infinite;">
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=html" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=css" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=js" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=react" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=tailwind" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=bootstrap" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=sass" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=git" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=github" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=html" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=css" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=js" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=react" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=tailwind" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=bootstrap" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=sass" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=git" alt="">
+                </div>
+                <div class="h-14 w-20">
+                  <img class="h-full w-full" src="https://skillicons.dev/icons?i=github" alt="">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 w-9/12">
+            <img class="rounded-3xl shadow-2xl" src="imgs/main.jpg" alt="Moemen image">
+          </div>
+        </section>
+
+
+        <!-- Technology slider -->
+        <div class="xl2:hidden h-28 flex w-auto overflow-hidden relative mt-10 mx-4 md:mx-32">
+          <div class="flex" style="width: fit-content; animation: scroll 10s linear infinite;">
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=html" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=css" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=js" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=react" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=tailwind" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=bootstrap" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=sass" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=git" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=github" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=html" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=css" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=js" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=react" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=tailwind" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=bootstrap" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=sass" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=git" alt="">
+            </div>
+            <div class="h-14 w-20">
+              <img class="h-full w-full" src="https://skillicons.dev/icons?i=github" alt="">
+            </div>
+            
+          </div>
+        </div>
+
+      </section>
+
+      <!-- About Section -->
+      <section class="mainPadding pt-28 mainSection" id="about">
+        <h1 class="h1 border-b-secondary border-b-8 w-fit">About Me</h1>
+        <p class="text-primary text-lg md:text-2xl p-8 tracking-widest text-center dark:text-white">
+          💖Greetings! I'm Moemen Adam, a dedicated front-end developer specializing in React, HTML, CSS, and JavaScript.
+          <br><br>
+          ✨My proficiency extends to Tailwind,
+           and I've successfully delivered numerous projects showcasing my skills and creativity.
+           <br><br>
+          💻As a problem solver, I hold a notable 1200+ rating in Codeforces (Pupil), and a 1431 rating in Codechef (2-star),
+           reflecting my analytical and algorithmic prowess.
+           <br><br>
+          💯With a solid foundation in data structures and object oriented programming (OOP),
+           I approach coding challenges with precision and ingenuity.
+           <br><br>
+           😊My practical experience includes a rewarding internship with ITI,
+            where I further honed my skills in React development.
+            <br><br>
+            😱Forty-seventh Placed in 2023 ICPC ECPC Qualifications Programming Contest
+        </p>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="mainPadding pt-28 mainSection" id="experience">
+        <h1 class="h1 border-b-secondary border-b-8 w-fit">Experience</h1>
+        <!-- iti -->
+        <div class="flex text-center flex-col mt-20">
+          <div>
+            <h2 class="h2">Information Technology Institute (ITI)</h2>
+            <h2 class="h3">FrontEnd Development Intern</h2>
+            <h3 class="h3">Jul 2023 - Aug 2023</h3>
+            <h3 class="h3">
+              Curse Work Contained Html , Css , JavaScript , ECMAScript6 , SASS , BootStrap and React
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="mainPadding mainSection" id="projects">
+        <h1 class="h1 border-b-secondary border-b-8 w-fit">Projects</h1>
+        <div class="flex flex-col gap-32 pb-16">
+
+          <div class="grid xl2:grid-cols-3 grid-cols-1 text-center pt-16">
+            <div class="col-span-2 flex justify-center items-center">
+              <img class="w-full max-w-xl 2xl:max-w-3xl sm:h-96 h-full" src="imgs/projects/skillbridge.png" alt="">
+            </div>
+            <div class="flex justify-between flex-col gap-10">
+              <h1 class="text-primary font-bold text-3xl text-center sm:text-6xl p-2 dark:text-white">SkillBridge</h1>
+              <p class="text-2xl">
+                  Skill Bridge is committed to delivering a clean,
+                 structured, and intuitive learning experience. this platform is designed to be
+                 user-friendly, offering a seamless journey for learners to acquire knowledge and skills.
+              </p>
+              <div class="flex gap-5 justify-center flex-wrap items-center">
+                <span class="tech">React</span>
+                <span class="tech">Tailwind</span>
+              </div>
+              <div class="flex justify-center items-center gap-10">
+                <div class="hover:scale-150 transition duration-500">
+                  <a target='_blank' href="https://github.com/MoemenAdam/SkillBridge"><i class="ri-github-fill text-4xl"></i></a>
+                </div>
+                <div>
+                  <a target='_blank' href="https://skilbridge.netlify.app/">
+                    <svg class="w-10 hover:scale-150 transition duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid xl2:grid-cols-3 grid-cols-1 text-center pt-16">
+            <div class="col-span-2 flex justify-center items-center">
+              <img class="w-full max-w-xl 2xl:max-w-3xl sm:h-96 h-full" src="imgs/projects/beat-the-devil.png" alt="">
+            </div>
+            <div class="flex justify-between flex-col gap-10">
+              <h1 class="text-primary font-bold text-3xl text-center sm:text-6xl p-2 dark:text-white">Beat the Devil</h1>
+              <p class="text-2xl">
+                captivating browser-based game that 
+                challenges players to go head-to-head 
+                with a formidable AI opponent in a thrilling 1v1 battle
+              </p>
+              <div class="flex gap-5 justify-center flex-wrap items-center">
+                <span class="tech">JavaScipt</span>
+                <span class="tech">Canvas</span>
+              </div>
+              <div class="flex justify-center items-center gap-10">
+                <div class="hover:scale-150 transition duration-500">
+                  <a target='_blank' href="https://github.com/MoemenAdam/Beat-the-Devil"><i class="ri-github-fill text-4xl"></i></a>
+                </div>
+                <div>
+                  <a target='_blank' href="https://beat-the-devil.netlify.app/">
+                    <svg class="w-10 hover:scale-150 transition duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid xl2:grid-cols-3 grid-cols-1 text-center pt-16">
+            <div class="col-span-2 flex justify-center items-center">
+              <img class="w-full max-w-xl 2xl:max-w-3xl sm:h-96 h-full" src="imgs/projects/chillcup.png" alt="">
+            </div>
+            <div class="flex justify-between flex-col gap-10">
+              <h1 class="text-primary font-bold text-3xl text-center sm:text-6xl p-2 dark:text-white">ChillCup</h1>
+              <p class="text-2xl">
+                ChillCup is an e-commerce website for coffee enthusiasts and
+                  dessert lovers. With a seamless user experience.
+              </p>
+              <div class="flex gap-5 justify-center  flex-wrap items-center">
+                <span class="tech">React</span>
+                <span class="tech">SASS</span>
+              </div>
+              <div class="flex justify-center items-center gap-10">
+                <div class="hover:scale-150 transition duration-500">
+                  <a target='_blank' href="https://github.com/MoemenAdam/ChillCup"><i class="ri-github-fill text-4xl"></i></a>
+                </div>
+                <div>
+                  <a target='_blank' href="https://chillcup.onrender.com/">
+                    <svg class="w-10 hover:scale-150 transition duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid xl2:grid-cols-3 grid-cols-1 text-center pt-16">
+            <div class="col-span-2 flex justify-center items-center">
+              <img class="w-full max-w-xl 2xl:max-w-3xl sm:h-96 h-full" src="imgs/projects/Booki.png" alt="">
+            </div>
+            <div class="flex justify-between flex-col gap-10">
+              <h1 class="text-primary font-bold text-3xl text-center sm:text-6xl p-2 dark:text-white">Booki</h1>
+              <p class="text-2xl">
+                Bookie is a Book Literary.
+              </p>
+              <div class="flex gap-5 justify-center flex-wrap items-center">
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+                <span class="tech">JavaScipt</span>
+              </div>
+              <div class="flex justify-center items-center gap-10">
+                <div class="hover:scale-150 transition duration-500">
+                  <atarget='_blank'  href="https://github.com/MoemenAdam/Bookie"><i class="ri-github-fill text-4xl"></i></atarget=>
+                </div>
+                <div>
+                  <a target='_blank' href="https://moemenadam.github.io/Bookie/index.html">
+                    <svg class="w-10 hover:scale-150 transition duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+       <!-- Footer -->
+       <footer class="bg-secondary mainPadding" id="contact">
+        <div class="mx-auto flex flex-col justify-between xl2:flex-row text-white px-5 py-10">
+
+          <div class="flex flex-col items-center justify-center gap-5 space-y-12 xl2:space-y-2">
+
+            <div class="flex text-6xl">
+              <!-- <img class="w-full" src="imgs/React-icon.svg.png" alt="FrontEndLogo"> -->
+              👩‍💻
+            </div>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/Mr7bar"><i class="ri-facebook-box-fill text-3xl"></i></a>
+              <a href="https://www.linkedin.com/in/moemenadam/"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+              <a href="https://github.com/MoemenAdam"><i class="ri-github-fill text-3xl"></i></a>
+              <a href="mailto:mmuummnna@gmail.com"><i class="ri-mail-fill text-3xl"></i></a>
+            </div>
+
+          </div>
+          <div class="sm:flex xl2:justify-around justify-center gap-24 xl2:space-x-12">
+
+            <div class="flex flex-col justify-center items-center">
+              <ul>
+                <li class="mainHover hover:text-white mt-8 "><a href="#portfolio">Portfolio</a></li>
+                <li class="mainHover hover:text-white mt-8 "><a href="#about">About</a></li>
+                <li class="mainHover hover:text-white mt-8 "><a href="#experience">Experience</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <ul>
+                <li class="mainHover hover:text-white mt-8 "><a target="_blank" href="https://drive.google.com/file/d/1Mhch41M1xIR4Pn19k67Gk-cxjOAUgq1o/view?usp=drive_link">Resume</a></li>
+                <li class="mainHover hover:text-white mt-8 "><a href="#contact">Contact me</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center items-center mt-20 xl2:mt-0 text-center">
+            Copyright &copy; 2024, All Rights Reserved
+          </div>
+
+        </div>
+       </footer>
+    </div>
+
+  </main>
+
+  <a href="#portfolio">
+    <svg id="top" class="fixed opacity-0 transition-all duration-300 bottom-0 translate-y-24 z-50 right-0 w-14 m-5 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </svg>
+  </a>
+  <script src="main.js"></script>
+</body>
+</html>

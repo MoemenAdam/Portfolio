@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #263461;
+}
+
+.mainPadding{
+  @apply  px-4 md:px-32 dark:text-white ;
+}
+
+.btn{
+  @apply  px-4 py-4 rounded-full text-white font-bold bg-secondary hover:bg-primary transition duration-200 dark:text-white hover:dark:text-primary hover:dark:bg-white;
+}
+
+.mainSection{
+  @apply  flex flex-col items-center mt-32 dark:text-white;
+}
+.h1{
+  @apply  text-primary font-bold text-3xl text-center xl2:text-left sm:text-6xl p-2 dark:text-white;
+}
+.h2{
+  @apply  text-green-600 font-bold text-2xl text-center sm:text-4xl p-2 ;
+}
+.h3{
+  @apply  text-primary font-bold text-xl text-center sm:text-2xl p-2 dark:text-white;
+}
+.mainHover{
+  @apply hover:text-secondary hover:relative transition duration-500 ease-linear dark:text-white;
+}
+.tech{
+  @apply shadow-sm text-xl font-bold cursor-pointer hover:underline underline-offset-8;
+}
+.active{
+  @apply translate-y-0 opacity-100;
+}
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-100% / 2));
+  }
+}

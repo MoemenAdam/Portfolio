@@ -18,6 +18,6 @@ My personal portfolio website is a showcase of my skills and projects. Developed
 I'm open to collaboration and always eager to connect with fellow developers and professionals. If you have any questions, project ideas, or just want to say hello, feel free to reach out to me.
 
 - **Email:** [MoemenAdam Email](mailto:mmuummnna@gmail.com)
-- **LinkedIn:** [Moemen Adam on LinkedIn]([#](https://www.linkedin.com/in/moemenadam/))
+- **LinkedIn:** [Moemen Adam on LinkedIn](https://www.linkedin.com/in/moemenadam/)
 
 Thank you for visiting my portfolio! I look forward to exploring new opportunities and contributing to exciting projects in the world of front-end development.

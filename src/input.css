@@ -39,7 +39,7 @@ html{
   @apply shadow-sm text-xl font-bold cursor-pointer hover:underline underline-offset-8;
 }
 .active{
-  @apply translate-y-0 opacity-100;
+  @apply translate-y-0 opacity-100 ;
 }
 @keyframes scroll {
   0%{

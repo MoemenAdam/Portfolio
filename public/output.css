@@ -920,6 +920,10 @@ video {
   transition-duration: 500ms;
 }
 
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 html{
   scroll-behavior: smooth;
 }

@@ -41,11 +41,17 @@ html{
 .active{
   @apply translate-y-0 opacity-100 ;
 }
+.spinner{
+  animation: scroll 8s linear infinite;
+}
+.spinner:hover{
+  animation-play-state: paused;
+}
 @keyframes scroll {
   0%{
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-100% / 2));
+    transform: translateX(calc(-100% / 2 ));
   }
 }

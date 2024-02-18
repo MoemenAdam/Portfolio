@@ -1179,6 +1179,10 @@ html{
     margin-top: 0px;
   }
 
+  .xl2\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .xl2\:flex {
     display: flex;
   }
